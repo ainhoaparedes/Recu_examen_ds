@@ -16,7 +16,31 @@ View(muestra03)
 library(tidyr)
 
 muestra03 <- muestra03%>%
-  filter(NifCif =!'' , !is.na(NifCif))
+  filter(NifCif==T)
 
 ### esta dando error pero yo haría eso asi para eliminar los registros poco informados de esa variable
+
+
+
+###sociedades anónimas
+regexp <- "([[:alpha:]]{1})([[:digit:]]{8})"
+
+## en principio no debería dar ningun tipo de problema 
+
+string <- "cuento el numero de coincidencias en el cif para saber si es un cif"
+tau::textcnt(string,n=1L,method="string")
+tau::textcnt(string,method="string")
+
+Hmisc::substring.location("cuento las coincidencias del cif","cif")
+Hmisc::first.word("cuento las coincidencias del cif")
+Hmisc::capitalize("quiero saber cuantas son ")
+
+## hemos encontrado quedel principio 3o y del final 32 son coincidencia
+#$first
+#[<1] 30
+
+#$last
+#[1] 32
+
+
 
