@@ -20,3 +20,15 @@ muestra03 <- muestra03%>%
 
 ### esta dando error pero yo haría eso asi para eliminar los registros poco informados de esa variable
 
+
+
+## el ejercicio 19
+
+stringr::str_view(muestra03$NifCif, "^b") #nos selecciona las palabras que empiezan por b
+
+regexp <- "([[:alpha:]]{1== 'B'})([[:digit:]]{8})"
+regexp
+
+
+
+# hemos hecho para que en principio nos devueva las que mpiezan por b  y tinen 8 dígitos
