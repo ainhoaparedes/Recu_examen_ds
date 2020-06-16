@@ -22,6 +22,7 @@ muestra03 <- muestra03%>%
 
 
 
+<<<<<<< HEAD
 ###sociedades anónimas
 regexp <- "([[:alpha:]]{1})([[:digit:]]{8})"
 
@@ -44,3 +45,15 @@ Hmisc::capitalize("quiero saber cuantas son ")
 
 
 
+=======
+## el ejercicio 19
+
+stringr::str_view(muestra03$NifCif, "^b") #nos selecciona las palabras que empiezan por b
+
+regexp <- "([[:alpha:]]{1== 'B'})([[:digit:]]{8})"
+regexp
+
+
+
+# hemos hecho para que en principio nos devueva las que mpiezan por b  y tinen 8 dígitos
+>>>>>>> rama2
